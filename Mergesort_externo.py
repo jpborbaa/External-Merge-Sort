@@ -49,12 +49,7 @@ def clean_up_temp_files(temp_files):
 
 input_file = '1m.txt'
 output_file = 'sorted_uuids.txt'
-while True:
-    escolha = input("\n1 - 5 Megabytes\n2 - 100 Megabytes\nEscolha o limite de memória que o programa utilizará: ")
-    if escolha == "1":
-        external_merge_sort(input_file, output_file, memory_limit=5 * 1024 * 1024)
-    elif escolha == "2":
-        external_merge_sort(input_file, output_file, memory_limit=100 * 1024 * 1024)
-        break
-    else:
-        print("Insira uma opção válida!")
+
+external_merge_sort(input_file, output_file, memory_limit=5 * 1024 * 1024)
+#external_merge_sort(input_file, output_file, memory_limit=100 * 1024 * 1024)
+
